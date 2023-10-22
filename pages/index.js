@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 import { PostCard, Categories , PostWidgets } from '@/components'
 import { getPosts } from '@/services'
+import FeaturedPosts from '@/sections/FeaturedPosts'
 
 
 export default function Home({ posts }) {
@@ -13,6 +14,7 @@ export default function Home({ posts }) {
           <title>Parmida Blog</title>
           <link rel='icon' href='/favicon.ico'/>
         </Head>
+        <FeaturedPosts/>
 
         <div className='grid grid-cols-1 lg:grid-cols-12 gap-12 '>
           <div className='lg:col-span-8 col-span-1'>
